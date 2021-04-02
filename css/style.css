@@ -38,7 +38,7 @@
 /* General Styles */
 
 body {
-  background: var(--clr-light);
+  background-color: var(--clr-light);
   color: var(--clr-dark);
   margin: 0;
   font-family: var(--ff-primary);
@@ -100,7 +100,7 @@ h3 {
 
 .section__subtitle--intro,
 .section__subtitle--about {
-  background: var(--clr-accent);
+  background-color: var(--clr-accent);
   padding: 0.25em 1em;
   font-family: var(--ff-secondary);
   margin-bottom: 1em;
@@ -158,15 +158,19 @@ nav {
 .about-me {
   max-width: 1000px;
   margin: 0 auto;
-  background: var(--clr-dark);
+  background-color: var(--clr-dark);
   color: var(--clr-light);
   position: relative;
+  z-index: 2;
 }
 
 .about-me:before {
   content: "";
-  background: var(--clr-dark);
+  background-color: var(--clr-dark);
   position: absolute;
+  height: 100%;
+  width: 200vw;
+  left: -100vw;
   z-index: -1;
 }
 
@@ -226,7 +230,7 @@ nav {
   width: 2em;
   height: 1px;
   margin: 0.5em auto 1em;
-  background: var(--clr-light);
+  background-color: var(--clr-light);
   opacity: 0.5;
 }
 
