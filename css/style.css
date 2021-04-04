@@ -37,6 +37,10 @@
 
 /* General Styles */
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: var(--clr-light);
   color: var(--clr-dark);
@@ -166,6 +170,26 @@ h3 {
   z-index: 1000;
 }
 
+.nav-open .nav {
+  transform: translateX(0);
+}
+
+.nav-open .nav-toggle {
+  position: fixed;
+}
+
+.nav-open .hamburger {
+  transform: rotate(0.625turn);
+}
+
+.nav-open .hamburger::after {
+  opacity: 0;
+}
+
+.nav-open .hamburger::before {
+  transform: rotate(90deg) translateX(-6px);
+}
+
 .hamburger {
   display: block;
   position: relative;
@@ -174,7 +198,7 @@ h3 {
 .hamburger,
 .hamburger::before,
 .hamburger::after {
-  background-color: var(--clr-dark);
+  background-color: var(--clr-accent);
   width: 2em;
   height: 3px;
   border-radius: 1em;
@@ -406,4 +430,18 @@ h3 {
 
 .social-list__link {
   padding: 0.5em;
+}
+
+/* Invidudual Portfolio Item */
+
+.courses-item-individual {
+  padding: 0 2em 2em;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.courses-item-individual p {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
