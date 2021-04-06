@@ -461,6 +461,7 @@ h3 {
   margin-left: auto;
   margin-right: auto;
 }
-.caption {
+
+.courses-item__caption {
   text-align: center;
 }
