@@ -103,7 +103,8 @@ h3 {
 }
 
 .section__subtitle--intro,
-.section__subtitle--about {
+.section__subtitle--about,
+.section__subtitle--projects {
   background-color: var(--clr-accent);
   padding: 0.25em 1em;
   font-family: var(--ff-secondary);
@@ -119,7 +120,7 @@ h3 {
 }
 
 .logo {
-  max-width: 100px;
+  max-width: 150px;
 }
 
 .nav {
@@ -163,6 +164,7 @@ h3 {
   background-color: transparent;
   border: 0;
   height: 2.5em;
+  margin-top: 1em;
   cursor: pointer;
   position: absolute;
   right: 1em;
@@ -490,4 +492,25 @@ h3 {
 
 .courses-item__caption {
   text-align: center;
+}
+
+/* Projects */
+
+.my-projects {
+  background-color: var(--clr-light);
+  color: var(--clr-dark);
+  text-align: center;
+}
+
+.section__subtitle--projects {
+  margin: 1em auto;
+  width: 20%;
+  min-width: 125px;
+}
+
+.my-projects__img {
+  box-shadow: var(--bs);
+  margin: auto;
+  height: auto;
+  width: 50%;
 }
