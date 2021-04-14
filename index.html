@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dennis Lieu Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
@@ -16,7 +16,7 @@
 
 <body>
     <header class="header">
-        <img class="logo" src="images/Logo.png" alt=""></img>
+        <a href="index.html"><img class="logo" src="images/Logo.png" alt=""></img></a>
         <button class="nav-toggle" aria-label="toggle navigation">
             <span class="hamburger"></span>
         </button>
@@ -24,9 +24,10 @@
             <ul class="nav__list">
                 <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
                 <li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
-                <li class="nav__item"><a href="#skills" class="nav__link">My Skills</a></li>
+                <li class="nav__item"><a href="#skills" class="nav__link">Skills & Attributes</a></li>
                 <li class="nav__item"><a href="#courses" class="nav__link">Coursework</a></li>
                 <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
+                <li class="nav__item"><a href="#involvement" class="nav__link">Involvment</a></li>
             </ul>
         </nav>
     </header>
@@ -62,7 +63,32 @@
 
     <!-- Skills -->
     <section class="my-skills" id="skills">
-        <h2 class="section__title section__title--skills">My Skills</h2>
+        <h2 class="section__title section__title--skills">Skills</h2>
+        <div class="skills">
+            <div class="skill">
+                <h3>Teamwork</h3>
+                <p>A great communicator and team player, I'm eager to collaborate with others to get work done. With
+                    involvment in societies and clubs under my belt, I'm no stranger to working with a team!</p>
+                <button class="skill__button" onclick="window.location.href='teamwork.html'">View More</button>
+            </div> <!-- / skill -->
+            <div class="skill">
+                <h3>Programming</h3>
+                <p>Having knowledge of Python and C/C++, I sit in front of the computer more than I'd like to admit! I
+                    enjoy coding, both as a hobby and as a learning venture, and I can't wait to start on my next
+                    project.</p>
+                <button class="skill__button" onclick="window.location.href='programming.html'">View More</button>
+            </div> <!-- / skill -->
+            <div class="skill">
+                <h3>Web Development</h3>
+                <p>Recently, I've gained some experience in HTML, CSS, and Javascript as well. I have experience with
+                    the software development cycle, particularly the SCRUM framework, and version control with
+                    Git/GitHub.
+                </p>
+                <button class="skill__button" onclick="window.location.href='web_development.html'">View More</button>
+            </div> <!-- / skill -->
+        </div> <!-- / skills -->
+
+        <h2 class="section__title section__title--skills">Attributes</h2>
         <div class="skills">
             <div class="skill">
                 <h3>Teamwork</h3>
@@ -119,13 +145,50 @@
 
     <section class="my-projects" id="projects">
         <h2 class="section__title section__title--projects">Projects</h2>
-        <p class="section__subtitle section__subtitle--projects">The TA</p>
-        <img src="images/enel300-cover.jpg" alt="" class="my-projects__img">
-        <div class="my-projects__body">
+        <div class="projects">
+            <div class="project">
+                <h3>The TA</h3>
+                <img src="images/enel300-cover.jpg" alt="" class="my-projects__img">
+            </div> <!-- / project -->
+            <div class="project">
+                <h3>Schulich Hub</h3>
+                <img src="images/enel300-cover.jpg" alt="" class="my-projects__img">
+            </div> <!-- / project -->
+        </div> <!-- / projects -->
+
+        <!-- <div class="my-projects__body">
+            <img src="images/enel300-cover.jpg" alt="" class="my-projects__img">
             <p>As part of my schooling, I participated in the University of Calgary's Integrated Learning Stream (ILS)
                 for second year electrical engineers. In one of our ENEL 300 course, we created a project called the TA.
             </p>
-        </div>
+        </div> -->
+
+    </section>
+
+    <!-- Involvement -->
+    <section class="involvement">
+        <h2 class="section__title section__title--involvement">Involvement</h2>
+        <div class="clubs">
+            <div class="club">
+                <img src="images/enel300-cover.jpg" class="club__img">
+                <h3>Engineering Students' Society</h3>
+                <p>Professional Development Commissoner | April 2020 - April 2021</p>
+                <button class="club__btn">Learn More</button>
+            </div> <!-- / club -->
+            <div class="club">
+                <img src="images/enel300-cover.jpg" class="club__img">
+                <h3>Engineering Students' Society</h3>
+                <p>Sponsorship Commissoner | April 2020 - Present</p>
+                <button class="club__btn">Learn More</button>
+            </div> <!-- / club -->
+            <div class="club">
+                <img src="images/enel300-cover.jpg" class="club__img">
+                <h3>Schulich Ignite</h3>
+                <p>Internal Communications Commissoner | April 2020 - Present</p>
+                <button class="club__btn">Learn More</button>
+            </div> <!-- / club -->
+        </div> <!-- / clubs -->
+
     </section>
 
     <!-- Footer -->

@@ -323,7 +323,7 @@ h3 {
   }
 }
 
-/* Skills Section */
+/* Skills & Attributes Section */
 
 .my-skills {
   background-color: var(--clr-light);
@@ -334,6 +334,7 @@ h3 {
 .section__title--skills {
   color: var(--clr-accent);
   position: relative;
+  margin-top: 2em;
 }
 
 .section__title--skills::after {
@@ -347,10 +348,10 @@ h3 {
 }
 
 .skill {
-  flex-basis: 100%;
+  flex-basis: 31%;
   border: 1px solid black;
   padding: 2em;
-  width: fit-content;
+  margin: 1%;
 }
 
 .skill__button {
@@ -371,12 +372,9 @@ h3 {
 @media (min-width: 800px) {
   .skills {
     display: flex;
+    flex-wrap: wrap;
     max-width: 1000px;
     margin: 0 auto;
-  }
-
-  .skill + .skill {
-    margin-left: 2em;
   }
 }
 
@@ -501,17 +499,62 @@ h3 {
   background-color: var(--clr-light);
   color: var(--clr-dark);
   text-align: center;
+  margin: 0 auto;
 }
 
-.section__subtitle--projects {
-  margin: 1em auto;
-  width: 20%;
-  min-width: 125px;
+.project {
+  flex-basis: 48%;
+  border: 1px solid black;
+  padding: 2em;
+  margin: 1%;
 }
 
-.my-projects__img {
-  box-shadow: var(--bs);
-  margin: auto;
-  height: auto;
-  width: 50%;
+@media (min-width: 800px) {
+  .projects {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+}
+
+/* Involvement */
+
+.involvement {
+  margin: 5em auto;
+  background-color: var(--clr-dark);
+  color: var(--clr-light);
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+.involvement:before {
+  content: "";
+  background-color: var(--clr-dark);
+  position: absolute;
+  height: 100%;
+  width: 200vw;
+  left: -100vw;
+  z-index: -1;
+}
+
+.club {
+  flex-basis: 31%;
+  padding: 2em;
+  margin: 1%;
+}
+
+@media (min-width: 800px) {
+  .clubs {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+}
+
+.club__img {
+  border-radius: 50%;
+  margin: 1em 0;
 }
