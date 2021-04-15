@@ -378,6 +378,11 @@ h3 {
   }
 }
 
+.skill__page {
+  width: 1000px;
+  margin: 0 auto;
+}
+
 /* Courses Section */
 
 .my-courses {
@@ -509,6 +514,10 @@ h3 {
   margin: 1%;
 }
 
+.my-projects__img {
+  margin: 0 auto;
+}
+
 @media (min-width: 800px) {
   .projects {
     display: flex;
@@ -555,6 +564,7 @@ h3 {
 }
 
 .club__img {
-  border-radius: 50%;
-  margin: 1em 0;
+  margin: 1em auto;
+  max-width: 150px;
+  max-height: 150px;
 }
