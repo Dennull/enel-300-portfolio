@@ -445,6 +445,30 @@ h3 {
   background-color: var(--clr-accent);
 }
 
+.courses__intro {
+  position: relative;
+}
+
+@media (min-width: 1000px) {
+  .courses__intro {
+    display: grid;
+    width: min-content;
+    margin: 0 auto;
+    grid-column-gap: 1em;
+    grid-template-areas:
+      "img title"
+      "img subtitle";
+    grid-template-columns: min-content max-content;
+  }
+
+  .courses__thumb {
+    grid-area: img;
+    min-width: 500px;
+    position: relative;
+    z-index: 2;
+  }
+}
+
 /* Footer */
 
 .footer {
@@ -505,6 +529,14 @@ h3 {
 
 .courses-item__caption {
   text-align: center;
+}
+
+.courses-item-img {
+  margin: 2rem 0;
+}
+
+.courses__subtitle {
+  width: 500px;
 }
 
 /* Projects */
