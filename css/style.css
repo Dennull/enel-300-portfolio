@@ -383,6 +383,15 @@ h3 {
   margin: 0 auto;
 }
 
+.skill__page--title {
+  text-align: center;
+  margin: 1rem auto;
+}
+
+.skill__img {
+  margin: 2rem 0;
+}
+
 /* Courses Section */
 
 .my-courses {
