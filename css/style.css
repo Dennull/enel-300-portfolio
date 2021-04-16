@@ -550,13 +550,12 @@ h3 {
 
 .project {
   flex-basis: 48%;
-  border: 1px solid black;
   padding: 2em;
   margin: 1%;
 }
 
-.my-projects__img {
-  margin: 0 auto;
+.project__img {
+  margin: 2rem 0;
 }
 
 @media (min-width: 800px) {
@@ -571,7 +570,10 @@ h3 {
 /* Involvement */
 
 .involvement {
-  margin: 5em auto;
+  margin-top: 0;
+  margin-bottom: 5em;
+  margin-left: auto;
+  margin-right: auto;
   background-color: var(--clr-dark);
   color: var(--clr-light);
   position: relative;

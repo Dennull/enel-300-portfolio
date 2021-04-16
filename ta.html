@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dennis Lieu Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+        integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap:>">
+    <script src="https://kit.fontawesome.com/76b978fde2.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="header">
+        <a href="index.html"><img class="logo" src="images/Logo.png" alt=""></img></a>
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="hamburger"></span>
+        </button>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="index.html#home" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="index.html#about" class="nav__link">About Me</a></li>
+                <li class="nav__item"><a href="index.html#skills" class="nav__link">My Skills</a></li>
+                <li class="nav__item"><a href="index.html#courses" class="nav__link">Coursework</a></li>
+                <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
+                <li class="nav__item"><a href="#involvement" class="nav__link">Involvment</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="skill__page">
+        <h1 class=skill__page--title>The TA</h1>
+        <div class="project__text">
+            <h3>The Product</h3>
+            <p>As part of my schooling, I participated in the University of Calgary's Integrated Learning Stream (ILS)
+                for second year electrical engineers. In one of our ENEL 300 courses, we created a project called the TA
+                (Temperature Alarm). The alarm alerts plant owners if the temperature of the area or moisture of the
+                soil is unsuitable.</p>
+            <p>The TA uses a PIC microcontroller as the brain of the product. The voltage output of a voltage divider
+                circuit with a thermistor in it is taken as input into one of the pins of the microcontroller.
+                Similarly, the microcontroller reads the voltage from a moisture detector.</p>
+            <p>Math is done by the microcontroller to determine the temperature and moisture, which are both displayed
+                to the screen via an LCD screen. If the temperature falls out of a range specified by the user, a signal
+                is transmitted wirelessly to the alarm unit, alerting the user. For the moisture, the alarm will go off
+                when the soil becomes too dry.</p>
+        </div>
+        <img class="project__img" src="images/3d-ta-model.png" alt="">
+        <div class="project__text">
+            <p>Our product had multiple iterations. The initial ideas included a sign language to speech converter, a
+                morse code to speech converter, and a remote forest fire alarm. We had to change these ideas because
+                they weren’t feasible with our knowledge as second year engineers and due to the pandemic.</p>
+            <p>Our final product started off as a simple temperature alarm. We changed the idea to become wireless for
+                convenience, and added a moisture sensor to gear it towards plant owners. Our reasoning was that the
+                multifunctionality would be attractive to consumers and that there was a bigger potential market with
+                the use for plants. There were contingency plans for the product, which was to develop an app to connect
+                the temperature sensor to your phone.</p>
+        </div>
+        <img class="project__img" src="images/product-graphic.png" alt="">
+        <div class="project__text">
+            <h3>Teamwork</h3>
+            <p>The product we developed didn’t come without challenges. Working with a team and implementing the SCRUM
+                framework for the first time had some rough patches. It was difficult for us to take initiative and
+                develop ideas that were feasible for us to pull off considering the pandemic.</p>
+            <p>The most difficult aspect of the project was working on a technical product remotely. It was hard for us
+                to work together on a product when we didn’t have the physical product to look at together. We overcame
+                this meeting frequently online and by focusing on the software aspect of the product.</p>
+            <p>What I found especially rewarding was how our team was able to get together to push out a design for a
+                product despite working virtually. Although we weren’t able to get a physical product together, it was
+                gratifying having a solid design ready. The ability to <u>communicate</u> virtually with others is an
+                asset that will continue to help me move forward; it was truly making lemonade out of lemons.</p>
+        </div>
+        <img class="project__img" src="images/product-graphic.png" alt="">
+    </div>
+
+    <footer class="footer">
+        <a href="mailto:dennis.lieu@ucalgary.ca" class="footer__link">dennis.lieu@ucalgary.ca</a>
+        <ul class="social-list">
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://github.com/Dennull">
+                    <i class="fab fa-github"></i>
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://www.linkedin.com/in/dennis-lieu-a055781a0/">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </li>
+        </ul>
+    </footer>
+
+    <script src="js/index.js"></script>
+
+</body>
+
+</html>
