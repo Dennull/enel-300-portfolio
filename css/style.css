@@ -585,6 +585,11 @@ h3 {
   margin: 2rem 0;
 }
 
+.project-title {
+  text-decoration: none;
+  color: var(--clr-dark);
+}
+
 @media (min-width: 800px) {
   .projects {
     display: flex;
