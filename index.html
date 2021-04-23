@@ -16,7 +16,7 @@
 
 <body>
     <header class="header">
-        <a href="index.html"><img class="logo" src="images/dennis-logo.png" alt=""></img></a>
+        <a href="index.html"><img class="logo" src="images/dennis-logo.png" alt="Logo"></img></a>
         <button class="nav-toggle" aria-label="toggle navigation">
             <span class="hamburger"></span>
         </button>
@@ -24,7 +24,7 @@
             <ul class="nav__list">
                 <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
                 <li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
-                <li class="nav__item"><a href="#skills" class="nav__link">Skills & Attributes</a></li>
+                <li class="nav__item"><a href="#skills-attributes" class="nav__link">Skills & Attributes</a></li>
                 <li class="nav__item"><a href="#courses" class="nav__link">Coursework</a></li>
                 <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
                 <li class="nav__item"><a href="#involvement" class="nav__link">Involvement</a></li>
@@ -42,25 +42,31 @@
     </section>
 
     <!-- About Me -->
-    <section class="about-me" id="about">
-        <h2 class="section__title section__title--about">Who am I?</h2>
-        <p class="section__subtitle section__subtitle--about">Student at the University of Calgary</p>
-        <div class="about-me__body">
-            <p>I'm a second year electrical and digital engineering student at the University of Calgary. For most of my
-                life I've been passionate about science and technology, and hope to help drive change in the world using
-                them. I enjoy coding and am experienced with C/C++, Python, HTML, and CSS.
-            </p>
-            <p>A strong communicator and team member, I’m involved in societies and clubs like the Engineering Students’
-                Society at the university and Schulich Ignite. I love taking on new challenges, applying my problem
-                solving skills to solve real life issues. I want to continue to build strong engineering fundamentals so
-                that I can make a positive impact on society.
-            </p>
-        </div>
-        <img class="about-me__img" src="images/about-me-picture.png" alt="Another image of Dennis Lieu">
-    </section>
+    <div class="about-me__background">
+        <section class="about-me" id="about">
+            <h2 class="section__title section__title--about">Who am I?</h2>
+            <p class="section__subtitle section__subtitle--about">Student at the University of Calgary</p>
+            <div class="about-me__body">
+                <p>I'm a second year electrical and digital engineering student at the University of Calgary. For most
+                    of my
+                    life I've been passionate about science and technology, and hope to help drive change in the world
+                    using
+                    them. I enjoy coding and am experienced with C/C++, Python, HTML, and CSS.
+                </p>
+                <p>A strong communicator and team member, I’m involved in societies and clubs like the Engineering
+                    Students’
+                    Society at the university and Schulich Ignite. I love taking on new challenges, applying my problem
+                    solving skills to solve real life issues. I want to continue to build strong engineering
+                    fundamentals so
+                    that I can make a positive impact on society.
+                </p>
+            </div>
+            <img class="about-me__img" src="images/about-me-picture.png" alt="Another image of Dennis Lieu">
+        </section>
+    </div>
 
     <!-- Skills -->
-    <section class="my-skills" id="skills">
+    <section class="my-skills-attributes" id="skills-attributes">
         <h2 class="section__title section__title--skills">Skills</h2>
         <div class="skills">
             <div class="skill">
@@ -83,7 +89,7 @@
             </div> <!-- / skill -->
         </div> <!-- / skills -->
 
-        <h2 class="section__title section__title--skills">Attributes</h2>
+        <h2 class="section__title section__title--attributes">Attributes</h2>
         <p>As part of my education, recent initiatives that my university has been
             pushing out have been the concepts of learning in engineering, mental health, and professional development.
             The program has been called “engineering attributes”, and as a result I've gained valueable skills that I
@@ -94,16 +100,16 @@
                 <p>Posessing a "growth" mindset allows me to tackle problems with a good attitude. I embrace
                     challenges and learn from criticism.
                 </p>
-                <button class="skill__button" onclick="window.location.href='resilience.html'">View More</button>
-            </div> <!-- / skill -->
+                <button class="attribute__button" onclick="window.location.href='resilience.html'">View More</button>
+            </div> <!-- / attribute -->
             <div class="attribute">
                 <h3>Reflection</h3>
                 <p>Reflecting upon my past experiences allows me to identify both strengths and weaknesses. I keep doing
                     what works and correct what doesn't!
                 </p>
-                <button class="skill__button" onclick="window.location.href='reflection.html'">View More</button>
-            </div> <!-- / skill -->
-        </div> <!-- / skills -->
+                <button class="attribute__button" onclick="window.location.href='reflection.html'">View More</button>
+            </div> <!-- / attribute -->
+        </div> <!-- / attributes -->
     </section>
 
     <!-- Courses -->
@@ -126,6 +132,7 @@
                 <img src="images/enel361-cover.jpg" alt="ENEL 361 Cover Image" class="courses__img">
                 <button class="courses__button" onclick="window.location.href='enel361.html'">ENEL 361</button>
             </div>
+            <!-- Course 4-->
             <div class="courses__item">
                 <img src="images/enel300-cover.jpg" alt="ENEL 300 Cover Image" class="courses__img">
                 <button class="courses__button" onclick="window.location.href='enel300.html'">ENEL 300</button>
@@ -138,7 +145,7 @@
         <h2 class="section__title">Projects</h2>
         <div class="projects">
             <div class="project">
-                <a class="project-title" href="ta.html">
+                <a class="project__title" href="ta.html">
                     <h3 class="section__subtitle section__subtitle--projects">The TA</h3>
                 </a>
                 <a href="ta.html">
@@ -146,7 +153,7 @@
                 </a>
             </div> <!-- / project -->
             <div class="project">
-                <a class="project-title" href="schulich-hub.html">
+                <a class="project__title" href="schulich-hub.html">
                     <h3 class="section__subtitle section__subtitle--projects">Schulich Hub</h3>
                 </a>
                 <a href="schulich-hub.html">
@@ -157,27 +164,28 @@
     </section>
 
     <!-- Involvement -->
-    <section class="involvement" id="involvement">
-        <h2 class="section__title section__title--involvement">Involvement</h2>
-        <div class="clubs">
-            <div class="club">
-                <img src="images/ess-logo.png" class="club__img">
-                <h3>Engineering Students' Society</h3>
-                <p>Professional Development Commissoner</p>
-                <p class="clubs__caption">April 2020 - April 2021</p>
-                <p>Sponsorship Commissoner</p>
-                <p class=clubs__caption>April 2021 - Present</p>
-                <button class="club__btn" onclick="window.location.href='ess.html'">View More</button>
-            </div> <!-- / club -->
-            <div class="club">
-                <img src="images/ignite-logo.svg" class="club__img">
-                <h3>Schulich Ignite</h3>
-                <p>Internal Communications Commissoner</p>
-                <p class=clubs__caption>April 2021 - Present</p>
-            </div> <!-- / club -->
-        </div> <!-- / clubs -->
-
-    </section>
+    <div class="involvement__background">
+        <section class="involvement" id="involvement">
+            <h2 class="section__title section__title--involvement">Involvement</h2>
+            <div class="clubs">
+                <div class="club">
+                    <img src="images/ess-logo.png" class="club__img">
+                    <h3>Engineering Students' Society</h3>
+                    <p>Professional Development Commissoner</p>
+                    <p class="clubs__caption">April 2020 - April 2021</p>
+                    <p>Sponsorship Commissoner</p>
+                    <p class=clubs__caption>April 2021 - Present</p>
+                    <button class="club__button" onclick="window.location.href='ess.html'">View More</button>
+                </div> <!-- / club -->
+                <div class="club">
+                    <img src="images/ignite-logo.svg" class="club__img">
+                    <h3>Schulich Ignite</h3>
+                    <p>Internal Communications Commissoner</p>
+                    <p class=clubs__caption>April 2021 - Present</p>
+                </div> <!-- / club -->
+            </div> <!-- / clubs -->
+        </section>
+    </div>
 
     <!-- Footer -->
     <footer class="footer">
