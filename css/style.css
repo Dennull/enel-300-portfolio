@@ -453,16 +453,8 @@ h3 {
   margin-right: auto;
 }
 
-.courses-item__caption {
-  text-align: center;
-}
-
-.courses-item-img {
-  margin: 2rem 0;
-}
-
 .courses__subtitle {
-  width: 500px;
+  max-width: 500px;
 }
 
 @media (min-width: 1000px) {
@@ -500,10 +492,6 @@ h3 {
   margin: 1%;
 }
 
-.project__img {
-  margin: 2rem 0;
-}
-
 .project__title {
   text-decoration: none;
   color: var(--clr-dark);
@@ -532,7 +520,7 @@ h3 {
   background-color: var(--clr-dark);
 }
 
-.involvement {
+.my-involvement {
   background-color: var(--clr-dark);
   color: var(--clr-light);
   text-align: center;
@@ -552,7 +540,7 @@ h3 {
   max-height: 150px;
 }
 
-.clubs__caption {
+.clubs__caption--date {
   color: var(--clr-accent);
   font-size: 0.9rem;
 }
@@ -635,22 +623,23 @@ h3 {
 
 /* Portolio Entries */
 
-.skill__page {
-  width: 1000px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 106px;
+.portfolio-entry {
+  max-width: 1000px;
+  padding: 4em 2em;
+  margin: 0 auto;
 }
 
-.skill__page--title {
+.portfolio-entry__title {
   text-align: center;
-  margin: 1rem auto;
+  margin-bottom: 2rem;
 }
 
-.skill__img {
+.portfolio-entry__img,
+.courses-item__img {
   margin: 2rem 0;
 }
 
-.ess__img {
-  margin: 2rem 0;
+.portfolio-entry__caption,
+.courses-item__caption {
+  text-align: center;
 }
